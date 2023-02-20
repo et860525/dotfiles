@@ -19,5 +19,28 @@ packer.startup(function(use)
   use 'hrsh7th/cmp-nvim-lsp' -- LSP source for nvim-cmp
   use 'L3MON4D3/LuaSnip' -- Snippets plugin
   use 'onsails/lspkind-nvim' -- vscode-like pictograms
+  use 'williamboman/mason.nvim' -- Manage LSP servers
+  use 'williamboman/mason-lspconfig.nvim' -- Bridges mason.nvim with the lspconfig plugin
+
+  use {
+    'nvim-treesitter/nvim-treesitter', -- Syntax highlighter
+      run = function()
+        local ts_update = require('nvim-treesitter.install').update({ with_sync = true })
+          ts_update()
+      end,
+  }
+  use 'windwp/nvim-autopairs'
+  use 'windwp/nvim-ts-autotag'
+  use 'numToStr/Comment.nvim'
+  use 'nvim-tree/nvim-web-devicons'
+  use 'glepnir/lspsaga.nvim' -- LSP UI
+
+  use 'nvim-lua/plenary.nvim'
+  use 'nvim-telescope/telescope.nvim' -- Fuzzy finder
+  use 'nvim-telescope/telescope-file-browser.nvim'
+
+  use 'lewis6991/gitsigns.nvim'
+  use 'dinhhuy258/git.nvim'
+  use 'norcalli/nvim-colorizer.lua' -- Color highlighter
 
 end)
