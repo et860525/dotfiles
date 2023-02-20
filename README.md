@@ -33,6 +33,8 @@ Requires [Neovim](https://neovim.io/) (>= 0.8)
 - [lewis6991/gitsigns.nvim](https://github.com/lewis6991/gitsigns.nvim) - Git integration for buffers
 - [dinhhuy258/git.nvim](https://github.com/dinhhuy258/git.nvim) - Simple clone of the plugin [vim-fugitive](https://github.com/tpope/vim-fugitive)
 - [norcalli/nvim-colorizer.lua](https://github.com/norcalli/nvim-colorizer.lua) - A high-performance color highlighter
+- [jose-elias-alvarez/null-ls.nvim](https://github.com/jose-elias-alvarez/null-ls.nvim) - Use Neovim as a language server to inject LSP diagnostics, code actions, and more via Lua.
+- [MunifTanjim/prettier.nvim](https://github.com/MunifTanjim/prettier.nvim) - A prettier plugin
 
 # Usage
 

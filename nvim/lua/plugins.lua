@@ -43,4 +43,7 @@ packer.startup(function(use)
   use 'dinhhuy258/git.nvim'
   use 'norcalli/nvim-colorizer.lua' -- Color highlighter
 
+  use('jose-elias-alvarez/null-ls.nvim')
+  use('MunifTanjim/prettier.nvim') -- Prettier plugin
+
 end)
