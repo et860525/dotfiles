@@ -14,6 +14,13 @@ lspconfig.tsserver.setup {
   capabilities = capabilities
 }
 
+lspconfig.svelte.setup {
+  on_attach = on_attach,
+  filetypes = { "svelte" },
+  cmd = { "svelteserver", "--stdio" },
+  capabilities = capabilities
+}
+
 lspconfig.rust_analyzer.setup {
   on_attach = on_attach,
   filetypes = { "rust" },

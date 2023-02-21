@@ -13,6 +13,7 @@ nvim_ts.setup {
     "rust",
     "css",
     "html",
+    "svelte",
     "lua"
   },
   highlight = {

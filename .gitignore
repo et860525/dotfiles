@@ -1,7 +1,11 @@
 yay/
 
+# fish shell
 fish/completions
 fish/conf.d
 fish/fish_plugins
 fish/fish_variables
 fish/functions/
+
+# packer
+nvim/plugin/packer_compiled.lua
