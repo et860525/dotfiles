@@ -33,7 +33,9 @@ packer.startup(function(use)
   use 'windwp/nvim-ts-autotag'
   use 'numToStr/Comment.nvim'
   use 'nvim-tree/nvim-web-devicons'
+  use 'nvim-tree/nvim-tree.lua' -- A File Explorer For Neovim
   use 'glepnir/lspsaga.nvim' -- LSP UI
+  use 'folke/zen-mode.nvim' -- Focsing on the code
 
   use 'nvim-lua/plenary.nvim'
   use 'nvim-telescope/telescope.nvim' -- Fuzzy finder

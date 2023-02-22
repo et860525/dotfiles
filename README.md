@@ -35,6 +35,8 @@ Requires [Neovim](https://neovim.io/) (>= 0.8)
 - [norcalli/nvim-colorizer.lua](https://github.com/norcalli/nvim-colorizer.lua) - A high-performance color highlighter
 - [jose-elias-alvarez/null-ls.nvim](https://github.com/jose-elias-alvarez/null-ls.nvim) - Use Neovim as a language server to inject LSP diagnostics, code actions, and more via Lua.
 - [MunifTanjim/prettier.nvim](https://github.com/MunifTanjim/prettier.nvim) - A prettier plugin
+- [nvim-tree/nvim-tree.lua](https://github.com/nvim-tree/nvim-tree.lua) - A file explorer for Neovim written in Lua
+- [folke/zen-mode.nvim](https://github.com/folke/zen-mode.nvim) - Distraction-free coding for Neovim
 
 # Usage
 
