@@ -14,7 +14,9 @@ nvim_ts.setup {
     "css",
     "html",
     "svelte",
-    "lua"
+    "lua",
+    "pug",
+    "prisma"
   },
   highlight = {
     enable = true,

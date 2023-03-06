@@ -37,6 +37,7 @@ Requires [Neovim](https://neovim.io/) (>= 0.8)
 - [MunifTanjim/prettier.nvim](https://github.com/MunifTanjim/prettier.nvim) - A prettier plugin
 - [nvim-tree/nvim-tree.lua](https://github.com/nvim-tree/nvim-tree.lua) - A file explorer for Neovim written in Lua
 - [folke/zen-mode.nvim](https://github.com/folke/zen-mode.nvim) - Distraction-free coding for Neovim
+- [akinsho/bufferline.nvim](https://github.com/akinsho/bufferline.nvim) - A snazzy buffer line for Neovim
 
 # Usage
 

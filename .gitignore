@@ -9,3 +9,5 @@ fish/functions/
 
 # packer
 nvim/plugin/packer_compiled.lua
+
+simple-update-notifier

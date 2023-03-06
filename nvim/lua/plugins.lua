@@ -36,6 +36,7 @@ packer.startup(function(use)
   use 'nvim-tree/nvim-tree.lua' -- A File Explorer For Neovim
   use 'glepnir/lspsaga.nvim' -- LSP UI
   use 'folke/zen-mode.nvim' -- Focsing on the code
+  use 'akinsho/nvim-bufferline.lua'
 
   use 'nvim-lua/plenary.nvim'
   use 'nvim-telescope/telescope.nvim' -- Fuzzy finder
