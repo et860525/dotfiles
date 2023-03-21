@@ -16,6 +16,7 @@ nvim_ts.setup {
     "svelte",
     "lua",
     "pug",
+    "python",
     "prisma"
   },
   highlight = {

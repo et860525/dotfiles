@@ -51,3 +51,9 @@ lspconfig.lua_ls.setup {
   },
   capabilities = capabilities
 }
+
+lspconfig.pyright.setup {
+  on_attach = on_attach,
+  cmd = { "pyright-langserver", "--stdio" },
+  filetypes = { "python" }
+}
