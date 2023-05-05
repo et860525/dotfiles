@@ -1,4 +1,5 @@
 # aliases
+alias docker "sudo docker"
 alias l "exa -lg --icons"
 alias ll "exa -alg --icons"
 alias vim "nvim"

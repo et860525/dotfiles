@@ -14,6 +14,13 @@ lspconfig.tsserver.setup {
   capabilities = capabilities
 }
 
+lspconfig.jsonls.setup{
+  on_attach = on_attach,
+  filetypes = { "json" },
+  cmd = { "vscode-json-language-server", "--stdio" },
+  capabilities = capabilities
+}
+
 lspconfig.svelte.setup {
   on_attach = on_attach,
   filetypes = { "svelte" },
@@ -55,5 +62,6 @@ lspconfig.lua_ls.setup {
 lspconfig.pyright.setup {
   on_attach = on_attach,
   cmd = { "pyright-langserver", "--stdio" },
-  filetypes = { "python" }
+  filetypes = { "python" },
+  capabilities = capabilities
 }
