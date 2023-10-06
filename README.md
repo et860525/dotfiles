@@ -39,6 +39,24 @@ Requires [Neovim](https://neovim.io/) (>= 0.8)
 - [folke/zen-mode.nvim](https://github.com/folke/zen-mode.nvim) - Distraction-free coding for Neovim
 - [akinsho/bufferline.nvim](https://github.com/akinsho/bufferline.nvim) - A snazzy buffer line for Neovim
 
+# Npm installation
+
+For server configurations:
+
+  ```bash
+  # tsserver
+  npm install -g typescript typescript-language-server
+
+  # jsonls
+  npm i -g vscode-langservers-extracted
+  ```
+
+For prettier.nvim:
+
+  ```bash
+  npm install -g @fsouza/prettierd
+  ```
+
 # Usage
 
 1. Clone this project to your `.config` folder on Linux.

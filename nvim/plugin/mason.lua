@@ -4,4 +4,6 @@ local status2, mason_lsp = pcall(require, 'mason-lspconfig')
 if (not status2) then return end
 
 mason.setup()
-mason_lsp.setup()
+mason_lsp.setup({
+  ensure_installed = { "lua_ls", "rust_analyzer", "tsserver", "pyright" },
+})

@@ -3,8 +3,6 @@ if (not status) then return end
 
 nvim_ts.setup {
   ensure_installed = {
-    "markdown",
-    "markdown_inline",
     "tsx",
     "toml",
     "fish",
@@ -21,7 +19,7 @@ nvim_ts.setup {
   },
   highlight = {
     enable = true,
-    disable = {},
+    disable = { "markdown" }
   },
 
   autotag = {
