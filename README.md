@@ -4,8 +4,44 @@
 - [Fisher](https://github.com/jorgebucaran/fisher) - Plugin manager
 - [Tide](https://github.com/IlanCosman/tide) - Shell theme
 - [Sponge](https://github.com/meaningful-ooo/sponge) - Shell history tool
-- [Nerd fonts](https://www.nerdfonts.com/) - I use JetBrains Mono
+- [Nerd fonts](https://www.nerdfonts.com/) - I use [JetBrains Mono](https://www.jetbrains.com/lp/mono/)
 - [Exa](https://github.com/ogham/exa) - Replacement for `ls`
+
+# Pre-installation
+
+Please install these important packages in advance, otherwise you may encounter errors.
+
+## sudo
+
+```bash
+sudo apt-get install build-essential
+```
+
+## npm
+
+For lsp configurations(Check out [server_configurations.md](https://github.com/neovim/nvim-lspconfig/blob/master/doc/server_configurations.md)):
+
+  ```bash
+  # tsserver
+  npm install -g typescript typescript-language-server
+
+  # jsonls
+  npm i -g vscode-langservers-extracted
+  ```
+
+For [prettier.nvim](https://github.com/MunifTanjim/prettier.nvim?tab=readme-ov-file#setting-up-prettiernvim):
+
+  ```bash
+  npm install -g @fsouza/prettierd
+  ```
+
+# Usage
+
+1. Clone this project to your `.config` folder on Linux.
+    ```bash
+    git clone https://github.com/et860525/dotfiles.git ~/.config/  
+    ```
+2. Follow the [packer.nvim Quickstart](https://github.com/wbthomason/packer.nvim#quickstart) to install the plugin manager
 
 # Neovim Plugins
 
@@ -38,27 +74,4 @@ Requires [Neovim](https://neovim.io/) (>= 0.8)
 - [nvim-tree/nvim-tree.lua](https://github.com/nvim-tree/nvim-tree.lua) - A file explorer for Neovim written in Lua
 - [folke/zen-mode.nvim](https://github.com/folke/zen-mode.nvim) - Distraction-free coding for Neovim
 - [akinsho/bufferline.nvim](https://github.com/akinsho/bufferline.nvim) - A snazzy buffer line for Neovim
-
-# Npm installation
-
-For server configurations:
-
-  ```bash
-  # tsserver
-  npm install -g typescript typescript-language-server
-
-  # jsonls
-  npm i -g vscode-langservers-extracted
-  ```
-
-For prettier.nvim:
-
-  ```bash
-  npm install -g @fsouza/prettierd
-  ```
-
-# Usage
-
-1. Clone this project to your `.config` folder on Linux.
-2. Follow the [packer.nvim Quickstart](https://github.com/wbthomason/packer.nvim#quickstart) to install the plugin manager
 
