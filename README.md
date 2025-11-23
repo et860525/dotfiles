@@ -50,5 +50,16 @@ Plugins:
 Package:
 - [Nvm](https://github.com/nvm-sh/nvm): Node Version Manager
 - [Bun](https://bun.com/): A fast all-in-one JavaScript runtime
+- [eza](https://github.com/eza-community/eza): Alternative `ls`
+
+### tmux
+
+Plugins:
+- [Catppuccin for Tmux](https://github.com/catppuccin/tmux?tab=readme-ov-file)
+
+    ```bash
+    mkdir -p ~/.config/tmux/plugins/catppuccin
+    git clone -b v2.1.3 https://github.com/catppuccin/tmux.git ~/.config/tmux/plugins/catppuccin/tmux
+    ```
 
 ---
