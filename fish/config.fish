@@ -4,6 +4,11 @@ zoxide init fish | source
 # aliases
 alias l "eza --icons -lg"
 alias ll "eza --icons -alg"
+alias tree "eza --icons --tree --git-ignore"
+alias lt "eza --icons -lg --tree --level=2 --git-ignore"
+alias llt "eza --icons -alg --tree --level=2 --git-ignore"
+alias t2 "eza --icons --tree --level=2 --git-ignore"
+alias t3 "eza --icons --tree --level=3 --git-ignore"
 alias vim "nvim"
 alias vi "nvim"
 
