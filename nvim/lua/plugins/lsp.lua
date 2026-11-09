@@ -27,6 +27,8 @@ return {
             },
           },
         })
+        -- 啟用透過外部 (Bun) 全域安裝的 LSP
+        vim.lsp.enable({ "ts_ls", "pyright" })
       else
         require("lspconfig").lua_ls.setup({
           settings = {
@@ -48,8 +50,6 @@ return {
           map("K", vim.lsp.buf.hover, "查看文檔")
           map("<leader>rn", vim.lsp.buf.rename, "重新命名")
           map("<leader>ca", vim.lsp.buf.code_action, "修復建議")
-          map("[d", vim.diagnostic.goto_prev, "上一個錯誤")
-          map("]d", vim.diagnostic.goto_next, "下一個錯誤")
         end,
       })
     end,

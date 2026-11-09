@@ -13,10 +13,12 @@ alias vim "nvim"
 alias vi "nvim"
 
 # set default editor
-set -gx EDITOR vim
-set -gx TERM xterm-256color
+set -gx EDITOR nvim
+
+# Bun & Local Bin
+fish_add_path ~/.bun/bin ~/.local/bin
 
 # Android Dev
-set -Ux ANDROID_HOME /opt/homebrew/share/android-commandlinetools
-set -Ux JAVA_HOME /opt/homebrew/opt/openjdk@17
+set -gx ANDROID_HOME /opt/homebrew/share/android-commandlinetools
+set -gx JAVA_HOME /opt/homebrew/opt/openjdk@17
 fish_add_path $ANDROID_HOME/cmdline-tools/latest/bin $ANDROID_HOME/platform-tools

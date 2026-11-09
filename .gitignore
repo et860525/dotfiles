@@ -1,11 +1,16 @@
-# 忽略 fish 目錄下的所有內容
-fish/*
+# 預設忽略 ~/.config 下所有檔案與自動產生的資料夾（防止機密外洩）
+/*
 
-# 但唯獨不要忽略 config.fish
-!fish/config.fish
+# 白名單：放行根目錄設定與說明檔
+!/.gitignore
+!/README.md
 
-# 忽略 flutter
-flutter/
+# 白名單：放行追蹤的設定資料夾
+!/nvim/
+!/ghostty/
+!/tmux/
 
-# 忽略 nvim 裡的 log
-nvim.log
+# Fish：只放行 config.fish，忽略 fish_variables 等自動產生檔
+!/fish/
+/fish/*
+!/fish/config.fish

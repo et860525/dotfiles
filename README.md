@@ -52,6 +52,19 @@ curl -sL [https://raw.githubusercontent.com/jorgebucaran/fisher/main/functions/f
 fisher install ilancosman/tide@v6
 ```
 
+### 3. Neovim LSP (`ts_ls` 與 `pyright`) 透過 Bun 前置安裝
+
+由於本環境使用 **Bun** 取代 Node.js，而 Mason 預設依賴 `npm`，若要使用 TypeScript (`ts_ls`) 與 Python (`pyright`) 的語言伺服器，請先透過 Bun 全域安裝並建立 `node` 軟連結：
+
+```bash
+# 1. 建立 node 軟連結指向 bun（供 LSP 執行檔的 #!/usr/bin/env node 呼叫）
+mkdir -p ~/.local/bin
+ln -sf (which bun) ~/.local/bin/node
+
+# 2. 透過 Bun 全域安裝 ts_ls 與 pyright
+bun add -g typescript-language-server typescript pyright
+```
+
 ---
 
 ## 配置說明 (`fish/config.fish`)
