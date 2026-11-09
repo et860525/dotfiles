@@ -1,0 +1,8 @@
+# 忽略 fish 目錄下的所有內容
+fish/*
+
+# 但唯獨不要忽略 config.fish
+!fish/config.fish
+
+# 忽略 flutter
+flutter/
