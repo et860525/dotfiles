@@ -8,10 +8,12 @@ opt.backup = false
 opt.writebackup = false
 opt.inccommand = 'split'
 opt.wrap = false
+opt.updatetime = 300        -- Time in ms for plugins (like ALE) to update after typing
 
 -- UI --
 opt.number = true           -- Show line number
-opt.showcmd = true          -- Show command line 
+opt.signcolumn = 'yes'      -- Avoid git mark shake screen
+opt.showcmd = true          -- Show command line
 opt.showmatch = true        -- Highlight matching parenthesis
 opt.foldmethod = 'marker'   -- Enable folding (default 'foldmarker')
 opt.ignorecase = true       -- Ignore case letters when search
@@ -27,8 +29,3 @@ opt.pumblend = 5
 opt.expandtab = true        -- Use spaces instead of tabs
 opt.shiftwidth = 2          -- Shift 2 spaces when tab
 opt.tabstop = 2             -- 1 tab == 2 spaces
-opt.smartindent = true      -- Autoindent new lines
-
--- Undercurl --
-vim.cmd([[let &t_Cs = "\e[4:3m"]])
-vim.cmd([[let &t_Ce = "\e[4:0m"]])
