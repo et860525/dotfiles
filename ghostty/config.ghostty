@@ -1,0 +1,39 @@
+# --- 字型與排版 ---
+font-family = "JetBrainsMono Nerd Font"
+font-size = 14
+font-feature = calt
+font-feature = liga
+# 適度微調行距與邊距，提升閱讀舒適度
+adjust-cell-height = 15%
+window-padding-x = 12
+window-padding-y = 10
+
+# 關閉滑鼠游標停在程式碼上時自動拆開連字的行為（保持視覺穩定）
+#font-feature = -calt
+
+# --- 主題與外觀 ---
+theme = "Catppuccin Mocha"
+background-opacity = 0.95
+background-blur-radius = 20
+# 保持無邊框極簡風，同時保留系統控制鈕
+window-decoration = true
+
+# --- 游標行為 ---
+cursor-style = block
+cursor-style-blink = false
+# 游標反色顯示，避免在反白時看不清文字
+cursor-invert-fg-bg = true
+
+# --- 終端與複製體驗 ---
+# 選取文字時自動複製到剪貼簿
+copy-on-select = clipboard
+# 點擊 URL 自動開啟（需按住修飾鍵）
+mouse-shift-capture = false
+
+# --- 分割視窗 (Splits) ---
+window-save-state = always
+split-divider-color = "#313244"
+
+# --- macOS 系統整合 ---
+# 視窗標題列樣式：transparent 會讓紅黃綠「紅綠燈」按鈕無縫融入終端機背景
+macos-titlebar-style = transparent
