@@ -1,3 +1,4 @@
+-- Status Line for Neovim
 return {
   "nvim-lualine/lualine.nvim",
   dependencies = { "nvim-tree/nvim-web-devicons", "catppuccin/nvim", },

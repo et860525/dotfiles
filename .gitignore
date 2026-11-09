@@ -6,3 +6,6 @@ fish/*
 
 # 忽略 flutter
 flutter/
+
+# 忽略 nvim 裡的 log
+nvim.log
